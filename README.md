@@ -26,12 +26,13 @@ The analysis of the election show that:
   * Raymon Anthony Doane received 3.1% of the votes and 11,606 number of votes.
   * Charles Casper Stockham received 23.0% of the votes and 85,213 number of votes.
 * The **winner of the election** was:
-  * **Diana DeGette** who received **73.8%** of the vote and **272,892** votes.
+  * **Diana DeGette** who received **73.8%** of the vote and **272,892** votes. :tada:
+* For a full summary of the results please visit [Election Results](analysis/election_results.txt)
 
 ## Election Audits Summary
 The code used to generate the election audit results can easily be repurposed to automate other types of elections, such as senatorial or local elections. The results are saved to a .txt file which can be sent to an election commission. If additional voting information is also saved to a .csv, the code could be extended to report on votes by voting method (ballot, mail-in), for example. 
 
-There are a few ways to improve upon this election audit.  The code could be modified to check that all ballot ids are unique. Additionally, the report could show the percentage of votes that each candidate received per county. If the total number of registered voters is known, the results could include percentage of voter turnout.
+There are a few ways to improve upon this election audit.  The code could be modified to check that all ballot ids are unique. Additionally, the report could show the percentage of votes that each candidate received per county. If the total number of registered voters is known, the results could also include percentage of voter turnout.
 
 
 
