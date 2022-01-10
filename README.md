@@ -2,7 +2,7 @@
 Module 3 - Election Analysis using Python
 
 ## Overview of Project
-A fictional Colorado Board of Elections employee has asked to audit the results for a US congressional precinct in Colorado. The audit takes a .csv file containing all the tabulated votes and uses python to report on the following items of the election:
+A fictional Colorado Board of Elections employee has asked to audit the results for a US congressional precinct in Colorado. The audit takes a [.csv](Resources/election_results.csv) file containing all the tabulated votes and uses python to report on the following items of the election:
 1. The total number of votes cast
 1. A list of candidates who received votes
 1. The total number of votes each candidate received
