@@ -16,6 +16,19 @@ A fictional Colorado Board of Elections employee has asked to audit the results 
 ## Election Audit Results
 The analysis of the election show that:
 * There were 369,711 votes cast.
+  * Note the script counts the rows of the .csv, but skips the header row 
+  ```with open(file_to_load) as election_data:
+    reader = csv.reader(election_data)
+
+    # Read the header
+    header = next(reader)
+
+    # For each row in the CSV file.
+    for row in reader:
+
+        # Add to the total vote count
+        total_votes = total_votes + 1
+         
 * The county results were:
   * Arapahoe County: 24, 801 votes, 6.7%
   * Denver County: 306,055 votes, 82.8% 
@@ -28,6 +41,7 @@ The analysis of the election show that:
 * The **winner of the election** was:
   * **Diana DeGette** who received **73.8%** of the vote and **272,892** votes. :tada:
 * For a full summary of the results please visit [Election Results](analysis/election_results.txt)
+
 
 ## Election Audits Summary
 The code used to generate the election audit results can easily be repurposed to automate other types of elections, such as senatorial or local elections. The results are saved to a .txt file which can be sent to an election commission. If additional voting information is also saved to a .csv, the code could be extended to report on votes by voting method (ballot, mail-in), for example. 
